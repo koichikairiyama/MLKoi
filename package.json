@@ -1,0 +1,23 @@
+{
+  "name": "mlkoichi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koichikairiyama/MLKoi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koichikairiyama/MLKoi/issues"
+  },
+  "homepage": "https://github.com/koichikairiyama/MLKoi#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node": "^18.10.0"
+  }
+}
