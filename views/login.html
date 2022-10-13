@@ -19,7 +19,7 @@
         <section class="section1">
             <img class="Logo" src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
             <div class="contSearch">
-                <input type="search" class="search" name="search" placeholder="Buscar"> 
+                <input type="search" class="search" name="search" placeholder="Busca productos, marcas y mas"> 
                 <div class="icono"><i class="fa-solid fa-magnifying-glass"></i></div>
             </div> 
             <div class="dd">
@@ -44,7 +44,6 @@
                 </ul>
             </nav>  
         </section>
-
         <div class="section3">
             <div class="burger-menu">
                 <div class="contenedor-burguer">
@@ -93,10 +92,22 @@
         <img class="img" src="/img/img-home-banner.jpg" alt="" style="width: 100%;">
     </section>
 
-    <main>
-
-        
-    </main>
+<main>
+    <div class="container">
+        <div class="crearCuentaForm">
+                <div class="login">
+                    <p>LOGIN</p>
+                </div>
+                <form method="POST">
+                    <label for="nombre">Nombre de usuari@</label> 
+                    <input type="text" class="input-box" placeholder="Ingrese su nombre" name="nombre" id="nombre" minlength="4" required="required">
+                    <label for="contraseña">Contraseña</label> 
+                    <input type="password" class="input-box" placeholder="Ingrese una contraseña" name="contraseña" id="contraseña" minlength="4" required="required"> 
+                    <button><a href="/">Ingresar</a></button>
+                </form>
+        </div> 
+    </div>  
+</main>
 
 
 

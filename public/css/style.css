@@ -52,13 +52,14 @@ header {
 
 
 .search {
-    width: 400px;
+    width: 350px;
     padding-left: 10px;
+    
     
 }
 
 .section1 .dd {
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 20px;
 }
 
@@ -67,16 +68,17 @@ header {
     display: flex;
     flex-direction: row;
     padding-top: 20px;
-    
+    position: relative;
+    font-size: 15px;
+}
 
+.contSearch input {
+    font-size: 15px;
 }
 
 .section1 i {
     padding-right: 10px;
 }
-
-
-
 
 
 header .section2 {
@@ -85,9 +87,8 @@ header .section2 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 0px;
     flex-wrap: wrap;
-    font-size: 20px;
+    font-size: 18px;
     
 }
 
@@ -137,6 +138,7 @@ section a {
     header .section2 {
         display: none;
         flex-direction: row;
+       
     }   
 }
 
@@ -147,8 +149,6 @@ section a {
     
 }
     
-
-
 
 /*
 .contHead {
@@ -206,24 +206,21 @@ section a {
 }   */
 
 
-
-
-
-
-
-
 main {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    width: 95vw; 
-    margin:auto
+    width: 100vw; 
+    margin: 10px;
+    
     
 } 
 
 main h2 { 
     font-size: 25px;
-    
+    margin-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px ;
 }
 
 
@@ -234,13 +231,14 @@ main h2 {
     align-items: flex-start;
     justify-content: center;
     background-color: rgba(42, 1, 61, 0.199);
-    padding: 20px; 
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding: 50px; 
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 article {
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex: wrap;
 
@@ -383,6 +381,7 @@ footer {
     font-size: 16px ;
     justify-content: center;
     align-items: center;
+   
 }
 
 .contenedorPadre {
@@ -393,7 +392,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    font-size: 18px ;
+    font-size: 15px ;
     width: 100vw;
     height: fit-content;
     padding: 40px;
@@ -444,6 +443,7 @@ footer {
 
 footer p {
     padding-top: 10px;
+    
 }
 
 @media (min-width: 768px) {
@@ -478,8 +478,8 @@ main .container{
 }
 
 .crearCuentaForm {
-    background-color: rgb(222, 222, 222);
-    width: 800px;
+    background-color: #eac9269e;
+    width: 700px;
     flex-direction: column;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.412);
@@ -515,53 +515,71 @@ main .container{
   .crearCuentaForm form input {
     margin-bottom: 30px;
     padding-left: 10px;
+    padding-right: 10px;
     padding-top: 8px;
     padding-bottom: 7px;
-    border-radius: 0px;
+    border-radius: 10px;
     border: 1px solid;
     font-size: 0.8em;
     font-family: "Barlow Condensed", sans-serif;
-  }
+}
 
-  .crearCuentaForm .submit {
+#start {
+    width: 120px;
+}
+
+.crearCuentaForm button {
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     font-size: 1em;
     height: fit-content;
     font-family: "Teko", sans-serif;
-    background-color: #87ff74;
+    background-color: #ffffff;
     align-items: flex-start;
     margin-top: 10px;
+    margin-bottom: 20px;
     box-shadow: 2px 2px 2px 2px rgba(53, 53, 53, 0.102);
-  }
+}
+
+button a {
+    text-decoration: none;
+}
+
+
+button:hover{
+    background-color: #9ceda7;
+}
 
  .crearCuentaForm .reset {
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     font-size: 0.8em;
     height: fit-content;
     font-family: "Teko", sans-serif;
-    background-color: #d8ff74;
+    background-color: #ffffff;
     align-items: flex-start;
     box-shadow: 2px 2px 2px 2px rgba(53, 53, 53, 0.102);
     width: 400px; 
     align-self: center;
   }
 
+.reset:hover {
+    background-color: rgb(245, 131, 131);
+}
+
+  .crearCuentaForm p {
+      font-style: bolder;
+      
+  }
+
 
   button:hover { 
     opacity: 0.8;
-    font-size: 25px;
-    transition-duration: 450ms;
 }
 
-form button:hover { 
-  
-  font-size: 25px;
-  transition-duration: 0.5s;
-}
+
 
 .crearCuentaForm form .CuentaOK {
   
@@ -591,4 +609,25 @@ form button:hover {
     flex-direction: row;
 }
 
+.search {
+    position: relative;
 
+}
+.icono {
+    position: absolute;
+    left: 325px;
+    bottom: 0.5px;
+}
+
+#avatar {
+    
+        
+        padding-left: 0;
+        padding-right: 10px;
+        padding-top: 8px;
+        padding-bottom: 7px;
+        font-size: 0.8em;
+        font-family: "Barlow Condensed", sans-serif;
+        border-color: #eac9260f;
+    
+}

@@ -19,7 +19,7 @@
         <section class="section1">
             <img class="Logo" src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
             <div class="contSearch">
-                <input type="search" class="search" name="search" placeholder="Buscar"> 
+                <input type="search" class="search" name="search" placeholder="Busca productos, marcas y mas"> 
                 <div class="icono"><i class="fa-solid fa-magnifying-glass"></i></div>
             </div> 
             <div class="dd">
@@ -92,24 +92,20 @@
     </section>
 
     <main>
-<div class="container">
-           <div class="crearCuentaForm">
+        <div class="container">
+            <div class="crearCuentaForm">
                 <div class="login">
                     <p>CREAR UNA CUENTA</p>
                 </div>
                 <form action="/registro" method="POST">
                     <label for="nombre">Nombre</label> 
-                    <input type="text" class="input-box" placeholder="Ingrese su nombre" name="nombre" id="nombre">
-                    
+                    <input type="text" class="input-box" placeholder="Ingrese su nombre" name="nombre" id="nombre" minlength="2" required="required">
                     <label for="">Apellido</label> 
-                    <input type="text" class="input-box" placeholder="Ingrese su apellido"> 
-                    
+                    <input type="text" class="input-box" placeholder="Ingrese su apellido" minlength="2" required="required"> 
                     <label for="start">Fecha de nacimiento</label>
-                    <input type="date" id="start" name="trip-start" value="2018-07-22" max="2022-01-01">
-                    
+                    <input  type="date" id="start" name="trip-start" value="2018-07-22" max="2022-01-01" required="required">
                     <label for="domicilio">Domicilio</label> 
-                    <input type="text" class="input-box" placeholder="Domicilio" name="contraseña" id="contraseña"> 
-                    
+                    <input type="text" class="input-box" placeholder="Domicilio" name="domicilio" id="domicilio"minlength="4" required="required"> 
                     <label class="perfildeusuario" for="perfilusuario">Perfil del usuario</label>  
                     <div class="perfil1">
                     <label for=""><input type="checkbox" onclick="" name="comprador"/>&nbsp;&nbsp;Comprador</label>
@@ -121,27 +117,17 @@
                     <label for=""><input type="checkbox" onclick="" name="comprador"/>&nbsp;&nbsp;Hogar</label>
                     <label for=""><input type="checkbox" onclick="" name="vendedor"/>&nbsp;&nbsp;Juegueteria</label>
                     <label for=""><input type="checkbox" onclick="" name="comprador"/>&nbsp;&nbsp;Vida sana</label>
-                    
                     <label for="avatar">Foto de usuario</label>  
                     <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
-
                     <label for="contraseña">Contraseña</label> 
-                    <input type="password" class="input-box" placeholder="Ingrese una contraseña" name="contraseña" id="contraseña"> 
-                    
+                    <input type="password" class="input-box" placeholder="Ingrese una contraseña" name="contraseña" id="contraseña" minlength="10" required="required"> 
                     <label for="confirmarContraseña">Confirmar contraseña</label> 
-                    <input type="password" class="input-box" placeholder="Confirme su contraseña" name="confirmarContraseña" id="confirmarContraseña"> 
-
-                    <input   class="submit"  type="submit" value="Crear cuenta"><a href="/views/index.html"></a></input>
+                    <input type="password" class="input-box" placeholder="Confirme su contraseña" name="confirmarContraseña" id="confirmarContraseña" minlength="10" required="required"> 
+                    <button> <a href="/">Crear cuenta</a> </button>
                     <input  class="reset"  type="reset" value="Borrar datos">
                 </form>
-           </div> 
-           <div class="left"><img src="" alt=""></div>
-       </div> 
-
-
-
-
-        
+            </div> 
+        </div> 
     </main>
     <footer>
 
