@@ -50,6 +50,13 @@ header {
     font-size: 20px;
 }
 
+
+.search {
+    width: 400px;
+    padding-left: 10px;
+    
+}
+
 .section1 .dd {
     font-size: 20px;
     padding-top: 20px;
@@ -60,6 +67,7 @@ header {
     display: flex;
     flex-direction: row;
     padding-top: 20px;
+    
 
 }
 
@@ -218,9 +226,6 @@ main h2 {
     
 }
 
-section {
-    padding-bottom: 20px;
-}
 
 .cards { 
     display: flex;
@@ -454,5 +459,136 @@ footer p {
 
 
 
+main {
+    margin: 0px;
+    box-sizing: border-box;
+    height: fit-content;
+    background-color: #ffffff;
+    padding: 0;
+    width: 100vw;;
+    
+  }
+
+main .container{
+    flex-wrap: wrap; 
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 2em;
+}
+
+.crearCuentaForm {
+    background-color: rgb(222, 222, 222);
+    width: 800px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.412);
+    padding: 40px;
+    height: fit-content;
+    
+}
+
+
+
+
+  .crearCuentaForm .login {
+    font-family: "Teko", sans-serif;
+    font-size: 1.5em;
+    color: black;
+    flex-direction: column;
+    padding-bottom: 20px;
+  } 
+
+  .crearCuentaForm form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    font-family: "Teko", sans-serif;
+    margin-top: 10px;
+
+  }
+
+  .crearCuentaForm form label {
+    padding-bottom: 15px;
+  }
+
+  .crearCuentaForm form input {
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    border-radius: 0px;
+    border: 1px solid;
+    font-size: 0.8em;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+
+  .crearCuentaForm .submit {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 1em;
+    height: fit-content;
+    font-family: "Teko", sans-serif;
+    background-color: #87ff74;
+    align-items: flex-start;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(53, 53, 53, 0.102);
+  }
+
+ .crearCuentaForm .reset {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 0.8em;
+    height: fit-content;
+    font-family: "Teko", sans-serif;
+    background-color: #d8ff74;
+    align-items: flex-start;
+    box-shadow: 2px 2px 2px 2px rgba(53, 53, 53, 0.102);
+    width: 400px; 
+    align-self: center;
+  }
+
+
+  button:hover { 
+    opacity: 0.8;
+    font-size: 25px;
+    transition-duration: 450ms;
+}
+
+form button:hover { 
+  
+  font-size: 25px;
+  transition-duration: 0.5s;
+}
+
+.crearCuentaForm form .CuentaOK {
+  
+  font-size: 1em;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.crearCuentaForm form p {
+  margin-top: 10px;
+  font-size: 0.8em;
+  
+}
+
+.perfildeusuario {
+    margin-bottom: 20px;
+}
+
+.intereses {
+    margin-bottom: 20px;
+}
+
+.perfil1 {
+    display: flex;
+    flex-direction: row;
+}
 
 

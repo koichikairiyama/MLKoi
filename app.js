@@ -11,8 +11,10 @@ app.listen(3070, () => {    // metodo listen de app para levantar el servidor : 
     
 
 app.get('/', (req, res) => {   // parametro1 ('/') : pad,   // parametro2 : callback que obtiene como argumentos dos argumentos (req,res)
-    res.sendFile(path.join(__dirname, '/views/mercado.html') )
+    res.sendFile(path.join(__dirname, '/views/index.html') )
 }); 
+
+
 
 
 
